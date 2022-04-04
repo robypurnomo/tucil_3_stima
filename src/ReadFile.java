@@ -15,9 +15,13 @@ public class ReadFile {
                     int x;
                     if (data.charAt(i) != ' ') {
                         if (toInt(data.charAt(i)) == 1) {
-                            if (data.charAt(i+1) >= 48 && data.charAt(i+1) <= 57) {
-                                x = toInt(data.charAt(i))*10 + toInt(data.charAt(i+1));
-                                i++;
+                            if ((i+1) < data.length()) {
+                                if (data.charAt(i+1) >= 48 && data.charAt(i+1) <= 57) {
+                                    x = toInt(data.charAt(i))*10 + toInt(data.charAt(i+1));
+                                    i++;
+                                } else {
+                                    x = 1;
+                                }
                             } else {
                                 x = 1;
                             }

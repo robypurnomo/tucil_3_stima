@@ -25,9 +25,6 @@ public class BranchNBound {
             {
                 puzzle = this.queue.poll();
                 int cost = puzzle.calculateCost();
-                System.out.println("Simpul hidup = " + this.simpulHidup + "\ng(x)        = " + puzzle.calculateCost());
-                System.out.print("\33[1A\33[2K");
-                System.out.print("\33[1A\33[2K");
                 if (cost == 0)
                 {
                     break;

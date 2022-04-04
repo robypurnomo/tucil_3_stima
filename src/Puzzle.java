@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Puzzle {
-    private int mat[][];
+    public int mat[][];
     final int length = 4;
     public int lastmove;
     public List<Integer> movesHistory;
